@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dotween/1.1.4/dotween.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Clients List</h1>
+        <div class="filter">
+            <label for="filterDropdown">Filter by:</label>
+            <select id="filterDropdown">
+                <option value="all">All clients</option>
+                <option value="managers">Managers only</option>
+                <option value="nonManagers">Non-managers</option>
+            </select>
+        </div>
+        <ul id="clientList"></ul>
+    </div>
+
+    <div id="popup" class="hidden">
+        <h2 id="popupName"></h2>
+        <p>Points: <span id="popupPoints"></span></p>
+        <p>Address: <span id="popupAddress"></span></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dotween/1.1.4/dotween.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
